@@ -1,0 +1,19 @@
+.layout {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height: 100%;
+
+    .left-content {
+        width: 10%;
+        height: 400px;
+        background: #ffffff;
+        height: 100%;
+    }
+
+    .right-content {
+        width: 90%;
+        height: 400px;
+        background: #f7f7fa;
+    }
+}

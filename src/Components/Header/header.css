@@ -1,0 +1,14 @@
+.header {
+    background: #f7f7fa;
+    margin-left: 20px;
+
+    .date {
+        margin: 0px;
+        font-family: Snell Roundhand, cursive
+    }
+
+    .brand-name {
+        margin: 0px;
+        font-family: Snell Roundhand, cursive
+    }
+}
