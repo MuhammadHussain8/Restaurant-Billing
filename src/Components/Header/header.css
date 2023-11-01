@@ -1,14 +1,16 @@
 .header {
     background: #f7f7fa;
     margin-left: 20px;
+    margin-top: 20px;
 
     .date {
         margin: 0px;
-        font-family: Snell Roundhand, cursive
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
     }
 
     .brand-name {
         margin: 0px;
-        font-family: Snell Roundhand, cursive
+        font-family: Verdana, Geneva, Tahoma, sans-serif
     }
 }

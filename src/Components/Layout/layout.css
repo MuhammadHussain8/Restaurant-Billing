@@ -5,14 +5,14 @@
     height: 100%;
 
     .left-content {
-        width: 10%;
+        width: 15%;
         height: 400px;
         background: #ffffff;
         height: 100%;
     }
 
     .right-content {
-        width: 90%;
+        width: 85%;
         height: 400px;
         background: #f7f7fa;
     }
