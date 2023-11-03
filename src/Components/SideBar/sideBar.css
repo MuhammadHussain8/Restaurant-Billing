@@ -1,52 +1,47 @@
 .left-side-bar {
+  .brand {
+    width: 63px;
+    margin: 20px auto;
+  }
 
+  .user-container {
+    text-align: center;
+    border: 2px solid #f7f7fa;
 
-    .brand {
+    .profile {
+      border: 2px solid #55a077;
+      width: 63px;
+      height: 63px;
+      margin: 20px auto;
+      margin-bottom: 5px;
+      border-radius: 50%;
+
+      & > img {
         width: 63px;
-        margin: 20px auto;
+      }
+
+      .dot {
+        width: 50px;
+        height: 50px;
+        background: green;
+      }
     }
+  }
 
-    .user-container {
-        text-align: center;
-        border: 2px solid #f7f7fa;
+  .nav-bar {
+    list-style-type: none;
+    margin-top: 30px !important;
 
-        .profile {
-            border: 2px solid #55A077;
-            width: 63px;
-            height: 63px;
-            margin: 20px auto;
-            margin-bottom: 5px;
-            border-radius: 50%;
+    .nav-bar-item {
+      display: flex;
+      align-items: center;
+      margin: 10px;
 
-            &>img {
-                width: 63px;
-            }
-
-            .dot {
-                width: 50px;
-                height: 50px;
-                background: green;
-            }
-
-
-        }
+      .nav-title {
+        margin-left: 5px;
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+      }
     }
-
-
-    .nav-bar {
-        list-style-type: none;
-        margin-top: 30px !important;
-
-        .nav-bar-item {
-            display: flex;
-            align-items: center;
-            margin: 10px;
-
-            .nav-title {
-                margin-left: 5px;
-                font-size: 18px;
-                font-family: 'Courier New', Courier, monospace;
-            }
-        }
-    }
+  }
 }

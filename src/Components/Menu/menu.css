@@ -1,4 +1,78 @@
-.menu {
-    border: 1px solid red;
-  
+.card-container {
+  display: flex;
+  .menu-card {
+    width: 195px;
+    height: 190px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 2.5px 5px;
+    border: 1px solid #009e77;
+
+    .image-container {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      & > img {
+        width: 105px;
+        height: 90px;
+      }
+      .heart {
+        position: absolute;
+        right: 1px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .details {
+      .name-price {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 4px;
+
+        & > p {
+          font-size: 12px;
+          font-weight: 600;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .menu-price {
+          color: #009e77;
+        }
+      }
+    }
+
+    .desc {
+      font-size: 12px;
+      margin: 0px 4px;
+    }
+
+    .rating-btn {
+      display: flex;
+      margin: 5px 4px;
+      justify-content: space-between;
+
+      .rating {
+        display: flex;
+        align-items: end;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .star {
+          margin-right: 3px;
+        }
+      }
+      .edit-btn {
+        width: 65px !important;
+        background: #009e77;
+        color: #fff;
+        border: 1px solid #009e77;
+        border-radius: 2px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

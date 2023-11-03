@@ -11,13 +11,6 @@ const Sidebar = () => {
       <div className="brand">
         <img src={Brand} alt="logo" />
       </div>
-      <div className="user-container">
-        <div className="profile">
-          <img src={User} alt="user" />
-        </div>
-        <span className="dot"></span>
-        <span className="user-name">Admin</span>
-      </div>
       <ul className="nav-bar">
         <Link to="/">
           <li className="nav-bar-item">
