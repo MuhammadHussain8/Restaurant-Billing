@@ -6,8 +6,8 @@
     justify-content: space-between;
     margin: 4px;
 
-    & > p {
-      font-size: 15px;
+    &>p {
+      font-size: 18px;
       font-weight: 600;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -18,6 +18,7 @@
       border: 1px solid #009e77;
       padding: 2px;
       border-radius: 3px;
+
       &:active {
         transform: translateY(1px);
       }
@@ -31,7 +32,7 @@
 
     .menu-card {
       width: 195px;
-      height: 190px;
+      height: auto;
       background: #fff;
       border-radius: 5px;
       margin: 2.5px 5px;
@@ -41,26 +42,30 @@
         display: flex;
         position: relative;
         justify-content: center;
-        & > img {
+
+        &>img {
           width: 105px;
           height: 90px;
         }
+
         .heart {
           position: absolute;
           right: 1px;
+
           &:hover {
             cursor: pointer;
           }
         }
       }
+
       .details {
         .name-price {
           display: flex;
           justify-content: space-between;
           margin: 0px 4px;
 
-          & > p {
-            font-size: 12px;
+          &>p {
+            font-size: 15px;
             font-weight: 600;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
           }
@@ -92,15 +97,18 @@
             margin-right: 3px;
           }
         }
+
         .edit-btn {
-          width: 65px !important;
+          width: 75px !important;
           background: #009e77;
           color: #fff;
-          border: 1px solid #009e77;
+          border: 2px solid #009e77;
           border-radius: 2px;
+
           &:hover {
             cursor: pointer;
           }
+
           &:active {
             transform: translateY(1px);
           }
@@ -144,82 +152,142 @@
       }
     }
 
-    .order-cart {
-      position: relative;
-      border: 1px solid #ceced1;
-      border-radius: 3px;
-      display: flex;
-      margin: 4px;
+    .order-cart-container {
+      height: 45%;
 
-      .delete {
-        position: absolute;
-        top: 4px;
-        right: 4px;
-
-        &:hover {
-          cursor: pointer;
-        }
-        &:active {
-          transform: translateY(1px);
-        }
-      }
-
-      .counter {
+      .order-cart {
+        position: relative;
+        border: 1px solid #ceced1;
+        border-radius: 3px;
         display: flex;
-        align-items: center;
-        position: absolute;
-        margin: 0px;
-        bottom: 0;
-        right: 0;
+        margin: 4px;
 
-        & > p {
-          margin: 4px;
-          color: #009e77;
-        }
-        .counter-icon {
+        .delete {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+
           &:hover {
             cursor: pointer;
           }
+
           &:active {
             transform: translateY(1px);
           }
         }
-      }
 
-      .order-img {
-        width: 60px;
-
-        & > img {
-          width: 50px;
-        }
-      }
-
-      .order-details {
-        .order-title {
-          font-size: 14px;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          font-weight: 600;
-          margin: 2px;
-        }
-
-        .order-desc {
-          font-size: 14px;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          margin: 2px;
-        }
-
-        .price-quantity {
+        .counter {
+          display: flex;
+          align-items: center;
+          position: absolute;
           margin: 0px;
-          padding: 0px;
+          bottom: 0;
+          right: 0;
 
-          & > p {
-            font-size: 14px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 3px;
-            font-weight: 600;
+          &>p {
+            margin: 4px;
             color: #009e77;
           }
+
+          .counter-icon {
+            &:hover {
+              cursor: pointer;
+            }
+
+            &:active {
+              transform: translateY(1px);
+            }
+          }
         }
+
+        .order-img {
+          width: 60px;
+
+          &>img {
+            width: 50px;
+          }
+        }
+
+        .order-details {
+          height: 100%;
+
+          .order-title {
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            margin: 2px;
+          }
+
+          .order-desc {
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 2px;
+          }
+
+          .price-quantity {
+            margin: 0px;
+            padding: 0px;
+
+            &>p {
+              font-size: 14px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin: 3px;
+              font-weight: 600;
+              color: #009e77;
+            }
+          }
+        }
+      }
+    }
+
+    .Pricing-details {
+      height: 51%;
+      width: 100%;
+
+      &>table {
+        margin: 4px;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        &>hr {
+          width: 120%;
+        }
+
+        &>tr {
+          margin: 0px;
+          text-align: left;
+
+          &>th {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+
+
+        .derails-row {
+          font-size: 16px;
+
+          .item-name {
+            text-align: left;
+          }
+
+          .item-price {
+            text-align: right;
+            color: #009e77
+          }
+
+          .total-price-title {
+            font-weight: 600;
+          }
+
+          .total-price-amount {
+            font-weight: 600;
+            color: #009e77;
+            text-align: right;
+          }
+        }
+
+
       }
     }
   }

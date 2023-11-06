@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import Header from "../Header";
 import Sidebar from "../SideBar";
 import "./layout.css";
@@ -12,7 +12,6 @@ const Layout = (props) => {
       <div className="right-content">
         <Header />
         <div className="chilred">{props.children}</div>
-        {console.log(props)}
       </div>
     </div>
   );
