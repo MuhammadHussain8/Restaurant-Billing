@@ -30,17 +30,17 @@
 
   .nav-bar {
     list-style-type: none;
-    margin-top: 30px !important;
+    margin-top: 60px;
 
     .nav-bar-item {
       display: flex;
       align-items: center;
       margin: 10px;
+      margin-top: 30px;
 
-      .nav-title {
-        margin-left: 5px;
-        font-size: 18px;
-        font-family: "Courier New", Courier, monospace;
+      .link {
+        text-decoration: none;
+        color: #000;
       }
     }
   }

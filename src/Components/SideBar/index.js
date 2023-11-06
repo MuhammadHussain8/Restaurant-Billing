@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CiViewList, CiViewTable } from "react-icons/ci";
+import { CiReceipt, CiShoppingBasket, CiViewTable } from "react-icons/ci";
 import Brand from "./../../assets/icons/logo.png";
-import User from "./../../assets/icons/avatar.png";
 import "./sideBar.css";
 
 const Sidebar = () => {
@@ -12,16 +11,19 @@ const Sidebar = () => {
         <img src={Brand} alt="logo" />
       </div>
       <ul className="nav-bar">
-        <Link to="/">
+        <li className="nav-bar-item">
+          <Link to="/menu" className="link">
+            <CiViewTable size={33} />
+          </Link>
+        </li>
+        <Link to="new-order">
           <li className="nav-bar-item">
-            <CiViewTable size={30} />
-            <span className="nav-title">Menu</span>
+            <CiShoppingBasket size={33} className="link" />
           </li>
         </Link>
         <Link to="orders">
           <li className="nav-bar-item">
-            <CiViewList size={30} />
-            <span className="nav-title">Orders</span>
+            <CiReceipt size={33} className="link" />
           </li>
         </Link>
       </ul>

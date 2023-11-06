@@ -1,76 +1,224 @@
-.card-container {
-  display: flex;
-  .menu-card {
-    width: 195px;
-    height: 190px;
-    background: #fff;
-    border-radius: 5px;
-    margin: 2.5px 5px;
-    border: 1px solid #009e77;
+.menu-container {
+  max-width: 75%;
 
-    .image-container {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      & > img {
-        width: 105px;
-        height: 90px;
+  .card-container-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+
+    & > p {
+      font-size: 15px;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .add-new {
+      color: #009e77;
+      cursor: pointer;
+      border: 1px solid #009e77;
+      padding: 2px;
+      border-radius: 3px;
+      &:active {
+        transform: translateY(1px);
       }
-      .heart {
-        position: absolute;
-        right: 1px;
-        &:hover {
-          cursor: pointer;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+
+    .menu-card {
+      width: 195px;
+      height: 190px;
+      background: #fff;
+      border-radius: 5px;
+      margin: 2.5px 5px;
+      border: 1px solid #009e77;
+
+      .image-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        & > img {
+          width: 105px;
+          height: 90px;
+        }
+        .heart {
+          position: absolute;
+          right: 1px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .details {
+        .name-price {
+          display: flex;
+          justify-content: space-between;
+          margin: 0px 4px;
+
+          & > p {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+
+          .menu-price {
+            color: #009e77;
+          }
+        }
+      }
+
+      .desc {
+        font-size: 12px;
+        margin: 0px 4px;
+      }
+
+      .rating-btn {
+        display: flex;
+        margin: 5px 4px;
+        justify-content: space-between;
+
+        .rating {
+          display: flex;
+          align-items: end;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+          .star {
+            margin-right: 3px;
+          }
+        }
+        .edit-btn {
+          width: 65px !important;
+          background: #009e77;
+          color: #fff;
+          border: 1px solid #009e77;
+          border-radius: 2px;
+          &:hover {
+            cursor: pointer;
+          }
+          &:active {
+            transform: translateY(1px);
+          }
         }
       }
     }
-    .details {
-      .name-price {
+  }
+
+  .order-list {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0;
+    right: 0;
+    width: 275px;
+    height: 100%;
+
+    .new-order-text {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 4px;
+      width: 100px;
+      display: inline-block;
+    }
+
+    .cross {
+      margin: 4px;
+      float: right;
+      border: 1px solid #717377;
+      border-radius: 3px;
+      color: #717377;
+      align-items: center;
+      cursor: pointer;
+      width: 14px;
+      text-align: center;
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+    .order-cart {
+      position: relative;
+      border: 1px solid #ceced1;
+      border-radius: 3px;
+      display: flex;
+      margin: 4px;
+
+      .delete {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+
+      .counter {
         display: flex;
-        justify-content: space-between;
-        margin: 0px 4px;
+        align-items: center;
+        position: absolute;
+        margin: 0px;
+        bottom: 0;
+        right: 0;
 
         & > p {
-          font-size: 12px;
-          font-weight: 600;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .menu-price {
+          margin: 4px;
           color: #009e77;
         }
-      }
-    }
-
-    .desc {
-      font-size: 12px;
-      margin: 0px 4px;
-    }
-
-    .rating-btn {
-      display: flex;
-      margin: 5px 4px;
-      justify-content: space-between;
-
-      .rating {
-        display: flex;
-        align-items: end;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-        .star {
-          margin-right: 3px;
+        .counter-icon {
+          &:hover {
+            cursor: pointer;
+          }
+          &:active {
+            transform: translateY(1px);
+          }
         }
       }
-      .edit-btn {
-        width: 65px !important;
-        background: #009e77;
-        color: #fff;
-        border: 1px solid #009e77;
-        border-radius: 2px;
-        &:hover {
-          cursor: pointer;
+
+      .order-img {
+        width: 60px;
+
+        & > img {
+          width: 50px;
+        }
+      }
+
+      .order-details {
+        .order-title {
+          font-size: 14px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 600;
+          margin: 2px;
+        }
+
+        .order-desc {
+          font-size: 14px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 2px;
+        }
+
+        .price-quantity {
+          margin: 0px;
+          padding: 0px;
+
+          & > p {
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 3px;
+            font-weight: 600;
+            color: #009e77;
+          }
         }
       }
     }

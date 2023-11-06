@@ -8,7 +8,8 @@ const App = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<Menu />} />
+          <Route exact path="/menu" element={<Menu />} />
+          <Route exact path="/new-order" element={<Menu />} />
         </Routes>
       </Layout>
     </BrowserRouter>
